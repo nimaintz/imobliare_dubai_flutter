@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:imobiliare_dubai_flutter/config/routes.dart';
 
 void main() {
