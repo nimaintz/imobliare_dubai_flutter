@@ -21,14 +21,13 @@ class AppLayout extends StatelessWidget {
   Widget _buildHeader() {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-      height: 100,
+      height: 80,
       color: Colors.black,
       child: Row(
         children: [
           const Icon(Icons.apartment, color: Colors.amber, size: 30),
-          const SizedBox(width: 16),
-          Text('Logo', style: TextStyle(color: Colors.white, fontSize: 18)),
-          const Spacer(),
+          const SizedBox(width: 30),
+          // const Spacer(),
           _NavButton(label: 'Buy'),
           _NavButton(label: 'Rent'),
           _NavButton(label: 'Commercial'),
@@ -37,7 +36,8 @@ class AppLayout extends StatelessWidget {
           _NavButton(label: 'Contact us'),
           _NavButton(label: 'About us'),
           const SizedBox(width: 16),
-          const Icon(Icons.language, color: Colors.white),
+          const Spacer(),
+          const Icon(Icons.call, color: Colors.white),
           const SizedBox(width: 16),
           ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
